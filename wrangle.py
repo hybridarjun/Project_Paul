@@ -39,7 +39,6 @@ def wrangle():
                         if key == top_id:
                             if key not in season_games[file]:
                                 season_games[file][key] = {}
-                            print(key,i)
                             season_games[file][key][i] = {'possession': val['aggregate_stats']['possession_percentage'],
                                                       'total_pass': val['aggregate_stats']['total_pass'],
                                                       'total_tackle': val['aggregate_stats']['total_tackle'],
@@ -52,6 +51,26 @@ def wrangle():
                                                       'fouls':0,
                                                       'total_offside': 0
                                                     }
+                            home = float(match_data[game_id]['full_time_score'][0])
+                            away = float(match_data[game_id]['full_time_score'][-1])
+                            if key == match_data[game_id]['home_team_id']:
+                                if home > away:
+                                    season_games[file][key][i]['result'] = 2
+                                elif home == away:
+                                    season_games[file][key][i]['result'] = 1
+                                else:
+                                    season_games[file][key][i]['result'] = 0
+
+                            else:
+                                if away > home:
+                                    season_games[file][key][i]['result'] = 2
+                                elif away == home:
+                                    season_games[file][key][i]['result'] = 1
+                                else:
+                                    season_games[file][key][i]['result'] = 0
+
+
+
                             if 'shot_off_target' in val['aggregate_stats']:
                                 season_games[file][key][i]['shots_off_target'] += int(val['aggregate_stats']['shot_off_target'])
                             if 'won_corners' in val['aggregate_stats']:

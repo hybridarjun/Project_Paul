@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15ca7ae0-4aa9-4f76-ade8-55fa8599defb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13.csv" beforeDir="false" afterPath="$PROJECT_DIR$/13.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/15.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/167.csv" beforeDir="false" afterPath="$PROJECT_DIR$/167.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/26.csv" beforeDir="false" afterPath="$PROJECT_DIR$/26.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/30.csv" beforeDir="false" afterPath="$PROJECT_DIR$/30.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/32.csv" beforeDir="false" afterPath="$PROJECT_DIR$/32.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wrangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrangle.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wrangle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="330">
+              <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
               <folding>
                 <element signature="e#1#12#0" expanded="true" />
               </folding>
@@ -162,6 +169,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="220" y="51" width="1680" height="1027" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23327306" />
@@ -172,8 +180,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48235294" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22673796" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -191,13 +199,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/wrangle.py</url>
-          <line>75</line>
+          <line>110</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/wrangle.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -226,8 +229,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wrangle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="330">
+          <caret line="55" column="75" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
           <folding>
             <element signature="e#1#12#0" expanded="true" />
           </folding>
