@@ -94,16 +94,15 @@ def wrangle():
 
 #  df = pd.DataFrame.from_dict(season_games['15-16']['15'])
 
+    games_df = pd.DataFrame([])
     for top_id in top_ids.values():
-
-        games_df = pd.DataFrame([])
 
         for file in files_list:
             df = pd.DataFrame.from_dict(season_games[file][top_id]).T
 
             games_df = pd.concat([games_df, df], ignore_index=True)
 
-        games_df.to_csv('{}.csv'.format(top_id))
+    games_df.to_csv('total.csv')
 
 
     pprint.pprint(len(season_games['15-16']['15']))
