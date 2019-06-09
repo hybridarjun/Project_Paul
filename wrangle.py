@@ -44,7 +44,7 @@ def wrangle():
                                                       'total_tackle': val['aggregate_stats']['total_tackle'],
                                                       'shots_off_target': 0,
                                                       'corners': 0,
-                                                      'goals': 0,
+                                                      #'goals': 0,
                                                       'accurate_pass': val['aggregate_stats']['accurate_pass'],
                                                       'yellow_card':0,
                                                       'red_card':0,
@@ -78,8 +78,8 @@ def wrangle():
                             if 'total_offside' in val['aggregate_stats']:
                                 season_games[file][key][i]['total_offside'] += int(val['aggregate_stats']['total_offside'])
 
-                            if 'goals' in val['aggregate_stats']:
-                                season_games[file][key][i]['goals'] += int(val['aggregate_stats']['goals'])
+                            #if 'goals' in val['aggregate_stats']:
+                                #season_games[file][key][i]['goals'] += int(val['aggregate_stats']['goals'])
 
                             for player_name in val['Player_stats']:
                                 #print(file,player_name,key)

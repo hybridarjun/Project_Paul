@@ -5,22 +5,20 @@ from sklearn import preprocessing
 
 data = pd.read_csv('total.csv', usecols=range(1,12))
 data = data.sample(frac=1).reset_index(drop=True)
-y = data['result']
-X = data.drop('result', 1)
-y = y.to_numpy()
-X = X.to_numpy()
-X = preprocessing.scale(X)
-
-clf = RandomForestClassifier(n_estimators=100, max_depth=10,
+X_train = data.drop('result',1).iloc[:901,:]
+X_test = data.drop('result',1).iloc[901:,:]
+y_train = data['result'].iloc[:901]
+y_test = data['result'].iloc[901:]
+y_train = y_train.to_numpy()
+X_train= X_train.to_numpy()
+X_train = preprocessing.scale(X_train)
+clf = RandomForestClassifier(n_estimators=200, max_depth=20,
                              random_state=0)
-clf.fit(X, y)
+clf.fit(X_train,y_train)
 
-a = X[:1, :]
 
-print(clf.predict(a))
-
-print(clf.predict_proba(a))
-print(clf.score(X, y))
+print(pd.DataFrame(clf.predict_proba(X_test)))
+print(clf.score(X_test, y_test))
 
 
 print(clf.feature_importances_)
